@@ -129,6 +129,7 @@ my-project/
 ├── .gitignore                # Arquivo para listar arquivos ou pastas que devem ser ignorados pelo Git
 ├── README.md                 # Documentação do projeto
 └── docker-compose.yml        # Arquivo de configuração para o Docker
+```
 
 ## Boas Práticas de Codificação
 
