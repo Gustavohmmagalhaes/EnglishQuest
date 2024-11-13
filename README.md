@@ -80,8 +80,25 @@ EnglishQuest is a web platform designed to help users practice and solve English
 
 ## Estrutura de diretório
 
-my-project/ ├── assets/ │ ├── images/ │ └── styles/ ├── components/ │ ├── Button.tsx │ └── Header.tsx ├── pages/ │ ├── Home.tsx │ └── About.tsx ├── services/ │ └── api.ts ├── utils/ │ ├── formatCurrency.ts │ └── parsePhone.ts ├── .gitignore ├── package.json └── README.md
 
+- **assets/**
+  - images/
+  - styles/
+  
+- **components/**
+  - Button.tsx
+  - Header.tsx
+
+- **pages/**
+  - Home.tsx
+  - About.tsx
+
+- **services/**
+  - api.ts
+
+- **utils/**
+  - formatCurrency.ts
+  - parsePhone.ts
 ## Boas Práticas de Codificação
 
 - Utilizar o padrão de nomenclatura Camel Case em classes, métodos e variáveis.
