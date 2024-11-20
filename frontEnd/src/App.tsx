@@ -1,8 +1,11 @@
-
+// import Logo from './assets/Group (2).svg'
+import 'normalize.css';
 function App() {
 
   return (
-    <h1></h1>
+    <div>
+     
+    </div>
   )
 }
 
