@@ -1,0 +1,100 @@
+
+.navibar{
+    width: 270px;
+    height: 100%;
+    background-color: var(--background-color-navigate);
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    color: var(--color-text)
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    margin-top:-4px;  
+}
+
+.navibarLogo{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 8px;
+}
+
+.navibarLinks{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 28px;
+    height: 60vh;
+    gap: 40px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.navibarFooter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 28px;
+    gap:30px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.home{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.homeImg{
+    width: 22px;
+    height: 22px;
+    margin-top:-5px;
+}
+
+.progress {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.progressImg{
+    width: 22px;
+    height: 22px;
+    margin-top:-5px;
+}
+
+.goal{
+    display: flex;
+    gap: 10px;
+}
+
+.goalImg{
+    width: 22px;
+    height: 22px;
+    margin-top:-5px;
+}
+
+.settings{
+    display: flex;
+    gap: 10px;
+}
+
+.settingsImg{
+    width: 22px;
+    height: 22px;
+    margin-top:-5px;
+}
+
+.logout{
+    display: flex;
+    gap: 10px;
+}
+
+.logoutImg{
+    width: 22px;
+    height: 22px;
+    margin-top:-5px;
+}

@@ -10,6 +10,7 @@
 
 body {
     background-color: var(--background-color-page); 
+    background-color: #191817; 
     font-family: Poppins, sans-serif;
    
 }
@@ -19,6 +20,7 @@ a {
     color: inherit;
 }
 
+
  :root{
     --background-color-page: #27272A;
     --background-color-buttom: #6100C2;
@@ -26,3 +28,5 @@ a {
     --background-color-navigate: #21201E;
     --background-color-progress-componentes: #37312A;
 } 
+
+
