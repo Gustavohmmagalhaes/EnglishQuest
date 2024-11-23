@@ -10,7 +10,6 @@
 
 body {
     background-color: var(--background-color-page); 
-    background-color: #191817; 
     font-family: Poppins, sans-serif;
    
 }
@@ -22,7 +21,7 @@ a {
 
 
  :root{
-    --background-color-page: #27272A;
+    --background-color-page: #191817;
     --background-color-buttom: #6100C2;
     --color-text: #FFFFFF;
     --background-color-navigate: #21201E;

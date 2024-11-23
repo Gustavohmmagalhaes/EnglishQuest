@@ -21,33 +21,31 @@ function Navibar() {
         <section className='navibarLinks'>
           <div className='home'>
             <img className= "homeImg" src={Home} alt='logo do icone home'></img>
-            Home
+            <a href="/">Home</a>
           </div>
           <div className='progress'>
             <img className= "progressImg" src={Progress} alt='logo do icone progress'></img>
-            Progress
+            <a href="/">Progress</a>
           </div>
           <div className='goal'>
             <img className= "goalImg" src={Goal} alt='logo do icone Weekly Goal '></img>
-            Weekly Goal
+            <a href="/">Weekly Goal</a>
           </div> 
         </section>
 
         <section className='navibarFooter'>
           <div className='settings'>
               <img className= "settingsImg" src={Settings} alt='logo do icone settings'></img>
-              Settings
+              <a href="/">Settings</a>
             </div>
             <div className='logout'>
               <img className= "logoutImg" src={Logout} alt='logo do icone logout '></img>
-              Logout
+              <a href="/">Logout</a>
             </div> 
-        </section>
-
+        </section> 
         
       </section>
-      <section className='rest'></section>
-     
+    
     </div>
   )
 }
