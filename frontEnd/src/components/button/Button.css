@@ -1,0 +1,18 @@
+.button {
+    padding: 10px 10px; /* Espaçamento interno */
+    background: linear-gradient(45deg, var(--background-color-buttom), #974deb);
+    color: var(--color-text);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Evita quebra de linha */
+    font-size: 1rem; /* Tamanho do texto */
+    text-align: center; /* Centraliza o texto */
+    width: auto; /* Ajusta automaticamente ao conteúdo */
+  }
+  
+  .button:hover {
+    background: linear-gradient(45deg, #974deb, var(--background-color-buttom));
+  }
+  
