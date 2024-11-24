@@ -1,26 +1,3 @@
-.contentTotal {
-    display: flex;
-    height: 100vh;  /* A altura total da tela */
-}
-
-.mainContent {
-    flex: 1;  /* Ocupa o restante da tela */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;  /* Alinha o conteúdo no topo */
-    
-}
-
-.types{
-    display: flex;
-    gap: 20px;
-}
-
-.icons{
-    display: flex;
-    gap: 20px;
-}
-
 .content {
     display: flex;
     flex-direction: column;
@@ -55,18 +32,4 @@ img {
     gap: 30px;
     color: var(--color-text);
     font-weight: 300;
-}
-
-.button{
-    width: 140px;
-    height: 35px;
-    background: linear-gradient(45deg, var(--background-color-buttom), #974deb);
-    color: var(--color-text);
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.button:hover{
-    background: linear-gradient(45deg, #974deb, var(--background-color-buttom));
 }
