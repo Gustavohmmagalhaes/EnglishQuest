@@ -3,12 +3,66 @@
     height: 100vh;  /* A altura total da tela */
 }
 
-.mainContent {
+.mainContentProgress {
     flex: 1;  /* Ocupa o restante da tela */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;  /* Alinha o conteúdo no topo */
     
+}
+
+.contentProgress{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    margin-top: 0px;
+    padding: 50px;
+}
+
+.progressDivs{
+    width: 350px;
+    height: 210px;
+    background-color: var(--background-color-progress-componentes);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.topProgress{
+    flex: 1;
+    padding: 20px;
+    font-weight: 600;
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.downProgress{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    gap: 2px;
+    font-weight: 400;
+    font-size: small;
+    color: var(--color-text);
+    gap: 10px;
+}
+
+.number{
+    font-size: 40px;
+}
+
+.percent{
+    padding: 8px ;
+    background-color: var(--background-color-buttom);
+    border-radius: 31px;
 }
 
 .types{

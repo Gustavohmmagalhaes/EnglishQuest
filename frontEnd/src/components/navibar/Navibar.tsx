@@ -4,6 +4,7 @@ import Goal from '../../assets/calendar.svg'
 import Home from '../../assets/home.svg'
 import Settings from '../../assets/sliders.svg'
 import Logout from '../../assets/log-out.svg'
+import { Link } from 'react-router-dom';
 import 'normalize.css';
 import './Navibar.css';
 
@@ -21,15 +22,15 @@ function Navibar() {
         <section className='navibarLinks'>
           <div className='home'>
             <img className= "homeImg" src={Home} alt='logo do icone home'></img>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </div>
           <div className='progress'>
             <img className= "progressImg" src={Progress} alt='logo do icone progress'></img>
-            <a href="/">Progress</a>
+            <Link to="/progress">Progress</Link>
           </div>
           <div className='goal'>
             <img className= "goalImg" src={Goal} alt='logo do icone Weekly Goal '></img>
-            <a href="/">Weekly Goal</a>
+            <Link to="/goals">Weekly Goal</Link>
           </div> 
         </section>
 
