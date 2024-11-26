@@ -1,0 +1,61 @@
+.contentGoals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  width: 100%;
+  margin-top: 0;
+  padding: 30px;
+}
+
+.GoalsDivs {
+  background-color: var(--background-color-progress-componentes);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%; /* Garante consistência em telas pequenas */
+ 
+}
+
+.topGoals {
+  flex: 1;
+  padding: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.downGoals {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  font-weight: 400;
+  font-size: small;
+  color: var(--color-text);
+  gap: 10px;
+}
+
+.inputNumber {
+  width: 141px;
+  height: 35px;
+  background-color: aliceblue;
+  border-radius: 8px;
+  transition: border 0.3s ease; /* Suaviza a transição da borda */
+  padding: 5px;
+  outline: none;
+  border: 1.8px solid transparent; /* Esconde a linha */
+}
+input:hover {
+  border: 1.8px solid var(--background-color-buttom); /* Adiciona uma linha azul ao focar */
+}
+
+.percentGoals {
+  padding: 8px;
+  background-color: var(--background-color-buttom);
+  border-radius: 31px;
+}
