@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import 'normalize.css';
 import './Navibar.css';
 
-function Navibar() {
+export function Navibar() {
 
   return (
     <div className='total'>
@@ -51,4 +51,3 @@ function Navibar() {
   )
 }
 
-export default Navibar

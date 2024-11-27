@@ -1,6 +1,7 @@
 import "./HomeContent.css"
 import BackgroundImg from "../../assets/imgBackground.svg"
 import {Button} from "../button/Button"
+
 export function HomeContent(){
     return(
         <div className="content">

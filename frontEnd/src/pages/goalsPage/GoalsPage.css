@@ -1,22 +1,5 @@
-.contentTotal {
-    display: flex;
-    height: 100vh;  /* A altura total da tela */
-}
-
-.mainContent {
-    flex: 1;  /* Ocupa o restante da tela */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;  /* Alinha o conteúdo no topo */
-    
-}
-
-.types{
-    display: flex;
-    gap: 20px;
-}
-
-.icons{
-    display: flex;
-    gap: 20px;
+.types,
+.icons {
+  display: flex;
+  gap: 20px;
 }

@@ -1,6 +1,6 @@
 import "./ProgressPage.css"
-import Navibar from "../../components/navibar/Navibar"
-import Header from "../../components/header/Header"
+import {Navibar} from "../../components/navibar/Navibar"
+import {Header} from "../../components/header/Header"
 import { ProgressDiv } from "../../components/progressDiv/ProgressDiv"
 export function ProgressPage() {
     return (
