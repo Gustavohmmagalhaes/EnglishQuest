@@ -1,5 +1,4 @@
 import "./ProgressDiv.css"
-
 interface ProgressDivProps{
     title: string;
     number: number | string;

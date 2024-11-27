@@ -3,8 +3,7 @@ import Bell from "../../assets/bell.svg"
 import PerfilImg from "../../assets/Ellipse 757.svg"
 import './Header.css'
 
-function Header() {
-
+export function Header() {
     return(
         <header className="header">
 
@@ -25,5 +24,3 @@ function Header() {
     )
     
 }
-
-export default Header;
