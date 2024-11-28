@@ -1,8 +1,3 @@
-.contentTotal {
-    display: flex;
-    height: 100vh;  /* A altura total da tela */
-}
-
 .mainContentProgress {
     flex: 1;  /* Ocupa o restante da tela */
     display: flex;
@@ -10,7 +5,6 @@
     justify-content: flex-start;  /* Alinha o conteúdo no topo */
     
 }
-
 .contentProgress{
     display: flex;
     justify-content: space-between;
@@ -20,14 +14,4 @@
     width: 100%;
     margin-top: 0px;
     padding: 50px;
-}
-
-.types{
-    display: flex;
-    gap: 20px;
-}
-
-.icons{
-    display: flex;
-    gap: 20px;
 }

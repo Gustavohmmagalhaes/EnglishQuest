@@ -5,7 +5,13 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    margin: 16px;
+    margin: 20px;
     color: var(--color-text);
    
+}
+
+.types,
+.icons {
+  display: flex;
+  gap: 20px;
 }
