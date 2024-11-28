@@ -43,7 +43,9 @@
 .inputNumber {
   width: 141px;
   height: 35px;
-  background-color: aliceblue;
+  background-color: var(--color-text); /* Bege claro */
+  color: #37312A; /* Texto escuro para contraste */
+  border: 1px solid #8c8377;
   border-radius: 8px;
   transition: border 0.3s ease; /* Suaviza a transição da borda */
   padding: 5px;
