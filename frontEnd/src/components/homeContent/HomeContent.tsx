@@ -2,7 +2,11 @@ import "./HomeContent.css"
 import BackgroundImg from "../../assets/imgBackground.svg"
 import {Button} from "../button/Button"
 
-export function HomeContent(){
+interface HomeContentProps{
+    showQuestion: ()=>void;
+}
+
+export function HomeContent({showQuestion} : HomeContentProps){
     return(
         <div className="content">
 
@@ -12,7 +16,7 @@ export function HomeContent(){
 
                 <div className="contentText">
                     <p>Select the type of question you'd like to practice and click "Draw Question" to receive a random challenge. Get ready to test your skills and improve your English knowledge!</p>
-                    <Button>
+                    <Button onClick={showQuestion} >
                         Draw Question
                     </Button>
                 </div>

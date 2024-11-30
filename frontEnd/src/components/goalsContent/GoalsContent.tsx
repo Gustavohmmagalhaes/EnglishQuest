@@ -1,5 +1,6 @@
 import "./GoalsContent.css"
 
+
 export function GoalsContent() {
     return (
         <section className="contentGoals">
@@ -14,6 +15,7 @@ export function GoalsContent() {
                     <p>COMPLETION RATE</p>
                 </section>
             </div>
+            
         </section>
     )
 }

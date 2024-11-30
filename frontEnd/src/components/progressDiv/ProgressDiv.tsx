@@ -1,4 +1,5 @@
 import "./ProgressDiv.css"
+
 interface ProgressDivProps{
     title: string;
     number: number | string;
@@ -12,6 +13,7 @@ export function ProgressDiv({title, number, descriptionRate}: ProgressDivProps )
             <section className="topProgress">
                 <p>{title}</p>
                 <p className="number">{number}</p>
+                
             </section>
 
             <section className="downProgress">
