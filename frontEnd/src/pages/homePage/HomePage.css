@@ -7,11 +7,5 @@
     flex: 1;  /* Ocupa o restante da tela */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;  /* Alinha o conteúdo no topo */
-    
 }
-
-
-
-
 
