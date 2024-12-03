@@ -2,11 +2,11 @@ import "./HomeContent.css"
 import BackgroundImg from "../../assets/imgBackground.svg"
 import {Button} from "../button/Button"
 
-interface HomeContentProps{
+interface HomeContentEnemProps{
     showQuestion: ()=>void;
 }
 
-export function HomeContent({showQuestion} : HomeContentProps){
+export function HomeContentEnem({showQuestion} : HomeContentEnemProps){
     return(
         <div className="content">
 

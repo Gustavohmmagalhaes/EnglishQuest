@@ -8,11 +8,32 @@
     margin: 20px;
     color: var(--color-text);
    
-    
 }
 
 .types,
 .icons {
   display: flex;
   gap: 20px;
+}
+
+.choiceEnem{
+  font-weight: normal;
+  cursor: pointer;
+ 
+}
+
+.activechoiceEnem{
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.choiceGrammar{
+  font-weight: normal;
+  cursor: pointer;
+ 
+}
+
+.activechoiceGrammar{
+  font-weight: 600;
+  cursor: pointer;
 }
