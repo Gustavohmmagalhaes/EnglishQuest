@@ -3,13 +3,20 @@ import Bell from "../../assets/bell.svg"
 import PerfilImg from "../../assets/Ellipse 757.svg"
 import './Header.css'
 
-export function Header() {
+interface HeaderProps{
+    choiceEnem: ()=>void;
+    choiceGrammar: ()=>void; 
+    isChoiceEnem: boolean;
+    isChoiceGrammar: boolean;
+}
+
+export function Header({choiceEnem, choiceGrammar, isChoiceEnem, isChoiceGrammar}: HeaderProps) {
     return(
         <header className="header">
 
             <div className="types">
-                <a href="/">Type Enem</a>
-                <a href="/">Type Grammar</a>
+                <section  className = { isChoiceEnem ? "activechoiceEnem" : "choiceEnem" } onClick={choiceEnem} >Type Enem</section>
+                <section  className = { isChoiceGrammar ? "activechoiceGrammar" : "choiceGrammar" } onClick={choiceGrammar} >Type Grammar</section>
             </div>
 
             <div className="icons">

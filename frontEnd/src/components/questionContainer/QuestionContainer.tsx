@@ -1,15 +1,23 @@
 import { Button } from "../button/Button"
 import "./QuestionContainer.css"
+// import { Question } from "../question/questionContent";
 
+interface QuestionContainerprops {
+    questionType: "Enem" | "Grammar";
+}
 
-export function QuestionContainer() {
+export function QuestionContainer({ questionType }: QuestionContainerprops) {
 
     return (
         <div className="questionContainer">
 
             <div className="question">
 
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut et, possimus in, voluptatibus iure reiciendis culpa pariatur accusamus aliquam inventore commodi nemo perferendis deserunt nostrum harum error quasi quam ex.
+                {questionType === "Enem" ? (
+                    <div className="enem">Questão ENEM</div>
+                ) : (
+                    <div className="grammar">Questão Gramática</div>
+                )}
 
             </div>
 
