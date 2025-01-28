@@ -6,26 +6,20 @@
     flex-direction: column;
     padding: 50px;
     gap: 20px;
+    
 }
 
 .question{
-    padding: 100px;
+    padding: 50px;
 }
 
 .answer {
-  width: 141px;
-  height: 35px;
-  background-color: #21201E; /* Bege claro */
-  color: var(--color-text); /* Texto escuro para contraste */
-  border: 1px solid #8c8377;
-  border-radius: 8px;
-  transition: border 0.3s ease; /* Suaviza a transição da borda */
-  padding: 8px;
-  outline: none;
-  border: 1.8px solid transparent; /* Esconde a linha */
+  color: #ad6beb; /* Texto escuro para contraste */
 }
-input:hover {
-  border: 1.8px solid var(--background-color-buttom); /* Adiciona uma linha azul ao focar */
+
+li:hover {
+  cursor: pointer;
+  color: #ad6beb;
 }
 
 .commandArea{
@@ -40,8 +34,41 @@ input:hover {
 }
 
 .enem{
-  background-color: aliceblue;
+  color: var(--color-text);
+  font-weight: 300;
+  
+  
 }
 .grammar{
-  background-color: aliceblue;
+  color: var(--color-text);
+  font-weight: 300;
+  
+}
+
+/* adicionando A) B) C) */
+.options{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  
+}
+ul {
+  list-style-type: none;
+  counter-reset: option;
+}
+
+ul li {
+  counter-increment: option;
+  margin-bottom: 8px;
+}
+
+ul li::before {
+  content: counter(option, upper-alpha) ") ";
+  font-weight: 300;
+} 
+
+.statement{
+  
+  text-align: justify;
+  
 }

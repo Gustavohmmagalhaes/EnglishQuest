@@ -7,8 +7,15 @@ import Logout from '../../assets/log-out.svg'
 import { Link } from 'react-router-dom';
 import 'normalize.css';
 import './Navibar.css';
+import { useState} from 'react'
 
 export function Navibar() {
+
+  const[ispath, setPath] = useState(location.pathname);
+
+  const handleLinkClick  = (path: string) =>{
+    setPath(path);
+  }
 
   return (
     <div className='total'>
@@ -22,15 +29,15 @@ export function Navibar() {
         <section className='navibarLinks'>
           <div className='home'>
             <img className= "homeImg" src={Home} alt='logo do icone home'></img>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={()=>handleLinkClick} className= {ispath === '/' ? 'bold': 'normal'} >Home</Link>
           </div>
           <div className='progress'>
             <img className= "progressImg" src={Progress} alt='logo do icone progress'></img>
-            <Link to="/progress">Progress</Link>
+            <Link to="/progress" onClick={()=>handleLinkClick} className= {ispath === '/progress' ? 'bold': 'normal'}>Progress</Link>
           </div>
           <div className='goal'>
             <img className= "goalImg" src={Goal} alt='logo do icone Weekly Goal '></img>
-            <Link to="/goals">Weekly Goal</Link>
+            <Link to="/goals" onClick={()=>handleLinkClick} className= {ispath === '/goals' ? 'bold': 'normal'}>Weekly Goal</Link>
           </div> 
         </section>
 
