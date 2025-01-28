@@ -4,15 +4,16 @@
     height: 100%;
     background-color: var(--background-color-navigate);
     height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
     color: var(--color-text)
     
 }
+
 .logo{
     width: 30px;
     height: 30px;
-    margin-top:-4px;  
+    margin-top: -4px;  
 }
 
 .navibarLogo{
@@ -98,4 +99,12 @@
     width: 22px;
     height: 22px;
     margin-top:-5px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.normal{
+    font-weight: normal;
 }
