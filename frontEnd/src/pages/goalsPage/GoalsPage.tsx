@@ -1,10 +1,30 @@
-import {Navibar} from "../../components/navibar/Navibar"
-import {Header} from "../../components/header/Header"
+import { Navibar } from "../../components/navibar/Navibar"
+import { Header } from "../../components/header/Header"
 import { GoalsContent } from "../../components/goalsContent/GoalsContent"
-import { Button } from "../../components/button/Button"
 import "./GoalsPage.css"
+import { useState } from "react"
+
+
+
 
 export function GoalsPage() {
+
+    const [isChoiceEnem, setChoiceEnem] = useState(false);
+    const [isChoiceGrammar, setChoiceGrammar] = useState(false);
+    const [totalGoalEnem, setTotalGoalEnem] = useState(0);
+    const [totalGoalGrammar, setTotalGoalGrammar] = useState(0);
+
+    function handleChoice(choiceType: "Enem" | "Grammar") {
+
+        if (choiceType === "Enem") {
+            setChoiceEnem(true);
+            setChoiceGrammar(false);
+        } else {
+            setChoiceEnem(false);
+            setChoiceGrammar(true);
+        }
+    }
+
     return (
         <div className="contentTotal">
 
@@ -12,18 +32,25 @@ export function GoalsPage() {
 
             <section className="mainContent">
 
-                <Header />
-                <GoalsContent/>
-                <div className="startButton">
-                    <Button >
-                        START
-                    </Button>
+                <Header
+                    choiceEnem={() => handleChoice("Enem")}
+                    choiceGrammar={() => handleChoice("Grammar")}
+                    isChoiceEnem={isChoiceEnem}
+                    isChoiceGrammar={isChoiceGrammar}
+                />
 
-                    <Button >
-                        Choose new goal
-                    </Button>
-                </div>
+                <GoalsContent 
+                    isChoiceEnem = {isChoiceEnem}
+                    isChoiceGrammar={isChoiceGrammar}
+                    totalGoalEnem = {totalGoalEnem}
+                    setTotalGoalEnem = {setTotalGoalEnem}
+                    totalGoalGrammar = {totalGoalGrammar}
+                    setTotalGoalGrammar = {setTotalGoalGrammar}
                 
+                />
+
+                
+
             </section>
 
         </div>
