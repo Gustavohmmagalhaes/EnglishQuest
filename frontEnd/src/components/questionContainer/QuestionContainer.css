@@ -1,20 +1,21 @@
-.questionContainer{
-    width: 100%;
-    flex:1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 50px;
-    gap: 20px;
-    
+.questionContainer {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+
 }
 
-.question{
-    padding: 50px;
+.question {
+  padding: 50px;
 }
 
 .answer {
-  color: #ad6beb; /* Texto escuro para contraste */
+  color: #ad6beb;
+  /* Texto escuro para contraste */
 }
 
 li:hover {
@@ -22,36 +23,38 @@ li:hover {
   color: #ad6beb;
 }
 
-.commandArea{
-    display: flex;
-    justify-content: space-between;
+.commandArea {
+  display: flex;
+  justify-content: space-between;
 }
 
-.inputAndButton{
-    display: flex;
-    flex-direction: column;
-    gap:10px;
+.inputAndButton {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.enem{
+.enem {
   color: var(--color-text);
   font-weight: 300;
-  
-  
+
+
 }
-.grammar{
+
+.grammar {
   color: var(--color-text);
   font-weight: 300;
-  
+
 }
 
 /* adicionando A) B) C) */
-.options{
+.options {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  
+
 }
+
 ul {
   list-style-type: none;
   counter-reset: option;
@@ -65,10 +68,70 @@ ul li {
 ul li::before {
   content: counter(option, upper-alpha) ") ";
   font-weight: 300;
-} 
+}
 
-.statement{
-  
+.statement {
+
   text-align: justify;
-  
+
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+.alert {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  padding: 27px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
+  z-index: 1001;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+}
+
+.alert-icon {
+  font-size: 20px;
+  color: #4a90e2;
+  margin-right: 10px;
+}
+
+.alert-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.alert-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.alert-description {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 0;
+}
+
+.blur {
+  filter: blur(1px);
+  transition: filter 0.3s ease-in-out;
+  pointer-events: none;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
 }

@@ -31,7 +31,8 @@
           "text": "desconhecimento de origens genealógicas.",
           "correct": false
         }
-      ]
+      ],
+      "optionCorrect": "b"
     },
     {
       "id": "2",
@@ -64,7 +65,8 @@
           "text": "anseia por sua partida.",
           "correct": false
         }
-      ]
+      ],
+      "optionCorrect": "c"
     },
     {
       "id": "3",
@@ -97,7 +99,8 @@
           "text": "propagar desinformação.",
           "correct": false
         }
-      ]
+      ],
+      "optionCorrect": "a"
     }
   ],
 
@@ -129,7 +132,8 @@
           "text": "gone",
           "correct": false
         }
-      ]
+      ],
+      "optionCorrect": "b"
     },
     {
       "id": "2",
@@ -157,7 +161,8 @@
           "text": "She doesn't like coffee.",
           "correct": true
         }
-      ]
+      ],
+      "optionCorrect": "d"
     },
     {
       "id": "3",
@@ -185,9 +190,8 @@
           "text": "of",
           "correct": false
         }
-      ]
+      ],
+      "optionCorrect": "b"
     }
-
   ]
-
 }
