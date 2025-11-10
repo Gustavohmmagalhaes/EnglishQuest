@@ -1,4 +1,18 @@
 {
+  "users": [
+    {
+      "id": "1",
+      "nome": "Utilizador Exemplo",
+      "email": "exemplo@teste.com",
+      "senha": "senha123"
+    },
+    {
+      "id": "b827",
+      "nome": "Gustavo",
+      "email": "gustavomagalhaes3234@gmail.com",
+      "senha": "123senha"
+    }
+  ],
   "questions": [
     {
       "id": "1",
@@ -103,9 +117,7 @@
       "optionCorrect": "a"
     }
   ],
-
-  "questionsGrammar":[
-    
+  "questionsGrammar": [
     {
       "id": "1",
       "year": 2023,

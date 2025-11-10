@@ -1,0 +1,127 @@
+.login-page{
+    background: linear-gradient(to bottom, #7c799f, #c2b7af);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container{
+    width: 384px;
+    height: 610px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.inside-contaner{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+}
+
+.header-login{
+    font-family: 'GT Super Text', Georgia, serif;
+    font-weight: 500;
+    font-size: 32px;
+}
+.formulario-login{
+    margin-top: 30px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.link-secundario{
+    font-size: 14px;
+    color: black; /* Cor azul sutil para links */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: color 0.2s ease;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+.body-login{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.campo-form{
+    margin-bottom: 20px;
+
+}
+.campo-form label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.botao-principal {
+    width: 100%; /* Ocupa a largura total */
+    padding: 15px 20px;
+    background-color: #1a1a1a; /* Preto escuro */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 8px; /* Cantos arredondados para o botão */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.botao-principal:active {
+    transform: translateY(0); /* Volta ao normal ao clicar */
+}
+
+.campo-form input[type="email"],
+.campo-form input[type="password"] {
+    width: 100%; /* Ocupa a largura total do contêiner pai */
+    padding: 12px 15px; /* Preenchimento interno */
+    border: 1px solid #dcdcdc; /* Borda cinza clara */
+    border-radius: 6px; /* Cantos arredondados nos inputs */
+    font-size: 16px;
+    color: #333;
+    /* Remove o contorno padrão em foco para controlar o próprio */
+    outline: none; 
+    /* Garante que padding e border sejam incluídos na largura */
+    box-sizing: border-box; 
+}
+
+.footer-login {
+    text-align: center; /* Alinha o link à direita */
+    margin-bottom: 25px; /* Espaçamento abaixo do link */
+}
+
+.divisor-ou {
+    display: flex; /* Habilita o Flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin: 20px 0; /* Espaçamento vertical acima e abaixo do divisor */
+    width: 100%; /* Garante que ocupe a largura total */
+}
+
+.linha {
+    flex-grow: 1; 
+    height: 1px;
+    background-color: #d8d8d8;
+    margin: 0 10px; 
+}
+
+.texto-ou {
+ 
+    flex-shrink: 0; 
+    color: #888; 
+    font-size: 14px;
+}
+
+.login-social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

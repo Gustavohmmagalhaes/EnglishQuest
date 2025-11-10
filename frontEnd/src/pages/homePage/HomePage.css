@@ -1,3 +1,6 @@
+body{
+    overflow: hidden;
+}
 .contentTotal {
     display: flex;
     height: 100vh;  /* A altura total da tela */

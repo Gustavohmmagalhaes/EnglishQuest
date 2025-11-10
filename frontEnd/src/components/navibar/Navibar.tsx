@@ -29,7 +29,7 @@ export function Navibar() {
         <section className='navibarLinks'>
           <div className='home'>
             <img className= "homeImg" src={Home} alt='logo do icone home'></img>
-            <Link to="/" onClick={()=>handleLinkClick} className= {ispath === '/' ? 'bold': 'normal'} >Home</Link>
+            <Link to="/home" onClick={()=>handleLinkClick} className= {ispath === '/home' ? 'bold': 'normal'} >Home</Link>
           </div>
           <div className='progress'>
             <img className= "progressImg" src={Progress} alt='logo do icone progress'></img>
