@@ -11,7 +11,8 @@
 body {
     background-color: var(--background-color-page); 
     font-family: Poppins, sans-serif;
-   
+    font-size: 20px;
+    line-height: 1.6;
 }
 
 a {

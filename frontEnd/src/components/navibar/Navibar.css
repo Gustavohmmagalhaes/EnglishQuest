@@ -10,17 +10,18 @@
     
 }
 
-.logo{
-    width: 30px;
-    height: 30px;
-    margin-top: -4px;  
-}
 
 .navibarLogo{
     display: flex;
     justify-content: center;
-    margin-top: 37px;
+    padding: 14px;
+    font-size: 15px;
     gap: 8px;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
 }
 
 .navibarLinks{
@@ -31,7 +32,7 @@
     height: 60vh;
     gap: 40px;
     font-weight: 300;
-    font-size: 14px;
+    
 }
 
 .navibarFooter{
@@ -41,12 +42,13 @@
     margin-left: 28px;
     gap:30px;
     font-weight: 300;
-    font-size: 14px;
+    
 }
 
 .home{
     display: flex;
     gap: 10px;
+    align-items: center;
     
 }
 
@@ -59,6 +61,7 @@
 .progress {
     display: flex;
     gap: 10px;
+    align-items: center;
     
 }
 
@@ -71,6 +74,7 @@
 .goal{
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .goalImg{
@@ -82,23 +86,26 @@
 .settings{
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .settingsImg{
     width: 22px;
     height: 22px;
-    margin-top:-5px;
+
 }
 
 .logout{
     display: flex;
     gap: 10px;
+    align-items: center;
+    
 }
 
 .logoutImg{
-    width: 22px;
+    width: 2opx;
     height: 22px;
-    margin-top:-5px;
+    
 }
 
 .bold{
