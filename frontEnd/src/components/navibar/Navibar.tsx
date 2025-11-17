@@ -4,10 +4,11 @@ import Goal from '../../assets/calendar.svg'
 import Home from '../../assets/home.svg'
 import Settings from '../../assets/sliders.svg'
 import Logout from '../../assets/log-out.svg'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import 'normalize.css';
 import './Navibar.css';
 import { useState} from 'react'
+import { useAuth } from '../../context/AuthContext'
 
 export function Navibar() {
 
@@ -16,7 +17,14 @@ export function Navibar() {
   const handleLinkClick  = (path: string) =>{
     setPath(path);
   }
-
+  const { logout } = useAuth();
+  const navigate = useNavigate();
+  const handleLogout = () => {
+      
+        logout(); 
+    
+        navigate('/', { replace: true }); 
+  };
   return (
     <div className='total'>
       <section className='navibar'>
@@ -48,7 +56,7 @@ export function Navibar() {
             </div>
             <div className='logout'>
               <img className= "logoutImg" src={Logout} alt='logo do icone logout '></img>
-              <a href="/">Logout</a>
+              <a onClick={handleLogout}>Logout</a>
             </div> 
         </section> 
         

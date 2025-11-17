@@ -75,7 +75,7 @@ export default function ChangePassword(){
             
             if(updateResponse.ok){
                 alert("Sua senha foi atualizada com sucesso! Por favor, faça login com a nova senha.");
-                navigate('/login'); // Redireciona para o login
+                navigate('/'); // Redireciona para o login
             } else {
                  throw new Error(`Erro ao atualizar senha: ${updateResponse.status}`);
             }

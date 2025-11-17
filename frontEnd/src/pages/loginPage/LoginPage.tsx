@@ -1,9 +1,24 @@
 import './LoginPage.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { useAuth } from '../../context/AuthContext';
+
+const JWT_Payload =(user:any)=>{
+    const payload = {
+        id:user.id,
+        nome:user.nome,
+        email:user.email,
+        role:user.role || 'user',
+
+    }
+
+    return JSON.stringify(payload)
+}
 
 export default function LoginPage(){
     const navigate = useNavigate();
+    const {login} = useAuth();
+
     const [formDados, setFormDados] = useState({
         email: '',
         senha: '',
@@ -30,10 +45,18 @@ export default function LoginPage(){
                 (u: any) => u.email === formDados.email && u.senha === formDados.senha
             );
             if(usuarioAutenticado){
-                
-                navigate('/home'); 
-                
+                const tokenSimulado = JWT_Payload(usuarioAutenticado);
+                login(tokenSimulado);
 
+                // 🚀 Lógica de Redirecionamento CONDICIONAL
+                if (usuarioAutenticado.role === 'admin') {
+                    // Redireciona o administrador para o painel
+                    navigate('/admin/dashboardAdmin'); 
+                } else {
+                    // Redireciona usuários comuns para a home
+                    navigate('/home'); 
+                }
+                
             } else {
                 alert("Email ou senha inválidos. Tente novamente.");
             }

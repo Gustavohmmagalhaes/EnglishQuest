@@ -4,13 +4,15 @@
       "id": "1",
       "nome": "Utilizador Exemplo",
       "email": "exemplo@teste.com",
-      "senha": "senha123"
+      "senha": "senha123",
+      "role": "user"
     },
     {
       "id": "b827",
       "nome": "Gustavo",
       "email": "gustavomagalhaes3234@gmail.com",
-      "senha": "123senha"
+      "senha": "123senha",
+      "role": "admin"
     }
   ],
   "questions": [

@@ -60,7 +60,7 @@ export default function RegisterPage(){
         // Classes Renomeadas: login-page -> register-page, etc.
         <div className='register-page'> 
             <div className='register-container'>
-                <div className='inside-container'>
+                
                     {/* Título */}
                     <div className='header-register'>Crie sua conta</div> 
                     <div className='body-register'>
@@ -114,7 +114,7 @@ export default function RegisterPage(){
                     
                     {/* Footer com link para Login */}
                     <div className='footer-register'>Já tem uma conta? <Link to="/">Faça login</Link> </div> 
-                </div>
+              
             </div>
         </div>
     )

@@ -1,6 +1,5 @@
 /* --- 1. Contêiner Principal e Fundo --- */
 .register-page{
-    /* Fundo degradê */
     background: linear-gradient(to bottom, #7c799f, #c2b7af);
     height: 100vh;
     display: flex;
@@ -10,42 +9,31 @@
 
 .register-container{
     width: 384px;
-    /* Aumento da altura para acomodar mais campos (Nome e Confirmação de Senha) */
     height: 720px; 
     padding: 24px;
     background-color: #fff;
     border-radius: 10px;
-    /* Centraliza o conteúdo, garantindo que o título e o corpo caibam */
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* --- 2. Estrutura Interna --- */
-.inside-container{ 
-    display: flex;
-    flex-direction: column;
-    /* Aumentei a lacuna para melhor espaçamento com mais elementos */
-    gap: 24px; 
-}
-
-/* --- 3. Header e Título --- */
 .header-register{
     font-family: 'GT Super Text', Georgia, serif;
     font-weight: 500;
     font-size: 32px;
-    margin-bottom: 8px; /* Adicionado um pequeno espaçamento inferior */
+    margin-bottom: 8px;
 }
 
 /* Contêiner do formulário e opções sociais */
 .body-register{
     display: flex;
     flex-direction: column;
-    gap: 16px; /* Espaçamento entre o formulário, divisor e botões sociais */
+    gap: 16px;
 }
 
 .formulario-register{
-    margin-left: 0; /* Removendo a margem de 5px, use padding no container se necessário */
+    margin-left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +51,6 @@
     font-weight: bold;
 }
 .campo-form input[type="email"],
-/* Adicionado input[type="text"] para o campo Nome Completo, e input[type="password"] para o novo campo de confirmação */
 .campo-form input[type="password"], 
 .campo-form input[type="text"] {
     width: 100%;
@@ -94,7 +81,6 @@
     transform: translateY(0);
 }
 
-/* Estilos para o link "Esqueceu a senha?" (Removido do HTML, mas mantido para referência) */
 .esqueceuSenha{
     display: flex;
     justify-content: end;
@@ -132,10 +118,8 @@
     justify-content: center;
     gap: 10px;
 }
-/* Estilizando os botões Google/Facebook */
 .register-social button {
     flex-grow: 1;
-    padding: 10px;
     border: 1px solid #dcdcdc;
     border-radius: 6px;
     background-color: transparent;
@@ -151,11 +135,11 @@
 /* --- 8. Footer (Link para Login) --- */
 .footer-register {
     text-align: center;
-    padding-top: 10px; /* Adicionado padding para separação */
+    padding-top: 10px;
 }
 
 .footer-register a {
-    color: #1a1a1a; /* Cor do link */
+    color: #1a1a1a;
     text-decoration: none;
     font-weight: bold;
 }
